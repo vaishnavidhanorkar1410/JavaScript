@@ -135,7 +135,6 @@ let concatArray =  arrayBoys.concat(arrayGirls);
 console.log(concatArray);
 
 
-
 console.log(`------ Resize an array -------`);
 var arrayNames = ["Anil", "Siya", "Ram" ,"Sunil", "Jenny"];
 arrayNames.length = 3;
