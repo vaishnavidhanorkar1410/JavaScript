@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Local Session Storage</title>
+  </head>
+  <body>
+    <h2>Local Session Storage</h2>
+    <script>
+      console.log(`Local Storage`);
+      window.localStorage.setItem("fullName", "Vaishnavi Dhanorkar");
+      window.localStorage.setItem("city", "Amravati");
+      window.localStorage.setItem("pinCode", "445101");
+      window.localStorage.setItem("district", "Yavatmal");
+      // Remove Item
+      window.localStorage.removeItem("city");
+    </script>
+  </body>
+</html>
