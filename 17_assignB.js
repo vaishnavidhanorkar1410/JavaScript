@@ -20,51 +20,53 @@ const mahi = new Employee(99, "Mahesh", "HR", 85000, "Infy");
 const array = [ anil, radha, rishi, sonali, monika, viny, mahi ];
 
 
-console.log('------------------------Add all create emp object--------------------------- ');
+console.log('------------------------Add all create emp object---------------------------');
 for (const employee of array) {
         console.log(employee);
 }
-console.log('---------------Find all employee working in TCS object------------------------');
+
+console.log('----------------------------------------------------------------------------');
+console.log('1. Find all employee working in TCS object');
 for (const employee of array) {
     if (employee.emp_company =="TCS") {
         console.log(employee.emp_name, employee.emp_company);
        
     }    
 }
-
-console.log('-----------------Find Finance department employee ------------------------');
+console.log('----------------------------------------------------------------------------');
+console.log('2. Find Finance department employee');
 for (const employee of array) {
     if (employee.emp_dept =="Finance") {
         console.log(employee.emp_dept, employee.emp_name);
        
     }    
 }
-
-console.log('-----------------Find employees whose name starts with "R" and employee details---------------------');
+console.log('----------------------------------------------------------------------------');
+console.log('3. Find employees whose name starts with "R" and employee details');
 for (const employee of array) {
     if (employee.emp_name.startsWith("R")) {
         console.log(employee.emp_id, employee.emp_name, employee.emp_dept, employee.emp_salary, employee.emp_company);
        
     }    
 }
-
-console.log('-----------------Find employees whose salary is greater than 75000---------------------');
+console.log('----------------------------------------------------------------------------');
+console.log('4. Find employees whose salary is greater than 75000');
 for (const employee of array) {
     if (employee.emp_salary>75000) {
         console.log(employee.emp_name, employee.emp_company, employee.emp_salary);
        
     }    
 }
-
-console.log('-----------------Find employees whose salary is greater than equal to 50000---------------------');
+console.log('----------------------------------------------------------------------------');
+console.log('5. Find employees whose salary is greater than equal to 50000');
 for (const employee of array) {
     if (employee.emp_salary>=50000 && employee.emp_dept =="IT") {
         console.log(employee.emp_id, employee.emp_name, employee.emp_dept, employee.emp_salary,  employee.emp_company,);
        
     }    
 }
-
-console.log('---------------Find all employee from company "Infy"------------------------');
+console.log('----------------------------------------------------------------------------');
+console.log('6. Find all employee from company "Infy"');
 for (const employee of array) {
     if (employee.emp_company =="Infy") {
         console.log(employee.emp_id, employee.emp_name, employee.emp_dept, employee.emp_salary,  employee.emp_company,);
