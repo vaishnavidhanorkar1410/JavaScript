@@ -1,34 +1,35 @@
+Selecting Element in the DOM -->
+
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Exercise time</title>
-    </head>
-    <body>
-        <main>
-            <div id ="overview">
-                <h1>HTML & JavaScript are crucial technologies</h1>
-                <p>The web would not work without them...</p>
-            </div>
-            <div id="advantages">
-                <ul>
-                    <li>Flexible</li>
-                    <li>Available</li>
-                    <li>Magical</li>
-                </ul>
-            </div>
-        </main>
-        <script>
-            //Your solution code goes here
-            const mainHeading = document.quarySelector("#overview");
-            console.log(mainHeading.innerHTML);
-            const secondAdvantage = document.quarySelector("li");
-            const secondAdv=secondAdvantage[1];
-            console.log(secondAdvantage.innerHTML);
-            const advDiv =document.quarySelector("#advantages");
-            console.log(advdiv.innerHTML);
-        </script>
-        
-    </body>
+<html lang="en">
+<head>
+    <title>Exercise Time</title>
+    
+</head>
+<body>
+    <main>
+        <div id="overview">
+            <h1>HTML & JavaScript are crucial Technologies</h1>
+            <p>The web would not work without them...</p>
+        </div>
+        <div id="advantages">
+            <ul>
+                <li class="adv">Flexible</li>
+                <li class="adv">Available</li>
+                <li class="adv">Magical</li>
+            </ul>
+        </div>
+    </main>
+    <script>
+        const mainHeading = document.querySelector("h1");
+        console.log(mainHeading.innerHTML);
+
+        const secondAdvantage = document.querySelectorAll('.adv');
+        const secondAdv = secondAdvantage[1];
+        console.log(secondAdv.innerHTML);
+
+        const advDiv = document.querySelector('#advantages');
+        console.log(advDiv.innerHTML);
+    </script>
+</body>
 </html>
-
-
