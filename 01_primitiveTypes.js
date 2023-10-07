@@ -25,7 +25,7 @@ var isSoftwareEngineer = true;
 var isBachelor = false; 
 console.log(isBachelor);
 var typeOfIsMarried = typeof isMarried;
-console.log("Type of isMarried:", typeOfIsMarried);
++console.log("Type of isMarried:", typeOfIsMarried);
 
 // 3. String --> Sequence of character enclosed in '' or ""
 var firstName = "Bill";
